@@ -1,39 +1,41 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Biography</title>
-    <link rel="stylesheet" href="style.css">  <!-- Link to CSS -->
+    <title>My Professional Biography</title>
+    <link rel="stylesheet" href="style.css">  <!-- Linking CSS -->
 </head>
 <body>
 
-    <!-- Video Background for Password Section -->
+    <!-- Password Section with Glassmorphism -->
     <div id="password-section">
         <video autoplay muted loop id="password-video">
-            <source src="password-bg.mp4" type="video/mp4">  <!-- Upload this video -->
+            <source src="password-bg.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <div id="password-container">
-            <input type="password" id="password" placeholder="Enter Password">
-            <button onclick="checkPassword()">Submit</button>
+            <h2>Enter Password</h2>
+            <input type="password" id="password" placeholder="Type here...">
+            <button onclick="checkPassword()">Unlock</button>
+            <p id="error-message"></p>
         </div>
     </div>
 
-    <!-- Main Content Section with a Different Background -->
+    <!-- Main Content -->
     <div id="main-content">
         <video autoplay muted loop id="content-video">
-            <source src="content-bg.mp4" type="video/mp4">  <!-- Upload this video -->
+            <source src="content-bg.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <div id="content">
             <h1>Welcome to My Biography</h1>
-            <p>This is my personal website...</p>
+            <p>Explore my journey and experiences.</p>
         </div>
     </div>
 
-    <script src="script.js"></script>  <!-- Link to JavaScript -->
+    <script src="script.js"></script>  <!-- Linking JavaScript -->
 </body>
-                </html>
+                                  </html>
