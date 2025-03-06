@@ -5,49 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Biography</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Background Video -->
-    <video autoplay muted loop id="bg-video">
-        <source src="content-bg.mp4" type="video/mp4">
-    </video>
-
-    <!-- Welcome Section -->
-    <div class="welcome-container">
-        <div class="welcome-box">
-            <h1>Welcome to My Biography</h1>
-            <p>Explore my journey and experiences.</p>
-            <button id="viewBioBtn">View My Biography</button>
+    <div id="password-container">
+        <div class="password-box">
+            <h2>Enter Password</h2>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="error-message"></p>
         </div>
     </div>
 
-    <!-- Biography Section -->
-    <section id="biography">
-        <div class="bio-content">
-            <h2>About Me</h2>
-            <p>I’m <strong>Emmanuel K. Gyasi Arthur</strong>, popularly known as <strong>Mr. Romantic</strong>, a passionate tech expert and digital content creator from the Central Region of Ghana. Born on <strong>June 20, 2000</strong>, I have dedicated my career to exploring and sharing knowledge across various tech fields.</p>
-            
-            <h3>Expertise</h3>
-            <ul>
-                <li>Web Development</li>
-                <li>Graphic Design</li>
-                <li>AI-driven Content Creation</li>
-                <li>Tech Education</li>
-            </ul>
+    <div id="main-content" class="hidden">
+        <div class="hero">
+            <video autoplay loop muted playsinline>
+                <source src="content-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <h1>Welcome to My Biography</h1>
+                <p>Explore my journey and experiences.</p>
+            </div>
 
-            <h3>My Platforms</h3>
-            <ul>
-                <li><strong>WhatsApp:</strong> <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" target="_blank">CODE ZERO Tech Updates</a></li>
-                <li><strong>Backup WhatsApp:</strong> <a href="https://whatsapp.com/channel/0029VayLHeB6RGJLBJFZXs1e" target="_blank">Backup Channel</a></li>
-                <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@ekaggrafix" target="_blank">EKAG Grafix</a></li>
-                <li><strong>Telegram:</strong> <a href="https://t.me/rg_digitals" target="_blank">R.G DIGITALS</a></li>
-                <li><strong>Telegram Group:</strong> <a href="https://t.me/eka_g_grafix" target="_blank">EKA G Grafix</a></li>
-                <li><strong>Contact Me:</strong> <a href="https://wa.link/1kfvsa" target="_blank">Message Me</a></li>
-            </ul>
+            <div class="bio-container">
+                <h2>About Me</h2>
+                <p>I’m <strong>Emmanuel K. Gyasi Arthur</strong>, popularly known as <strong>Mr. Romantic</strong>, a passionate tech expert and digital content creator from the Central Region of Ghana. Born on June 20, 2000, I have dedicated my career to exploring and sharing knowledge across various tech fields.</p>
+
+                <h3>Expertise & Platforms</h3>
+                <p>With expertise in <strong>web development, graphic design, AI-driven content creation, and tech education</strong>, I strive to make technology accessible and practical for everyone. I manage several platforms, including:</p>
+
+                <ul>
+                    <li><strong>Romantic Grafix and Tech Update (WhatsApp)</strong> – Graphic design, digital skills, and the latest tech insights.</li>
+                    <li><strong>CODE ZERO Tech Updates (WhatsApp)</strong> – Real-time tech updates and digital innovations.</li>
+                    <li><strong>R.G DIGITALS (Telegram)</strong> – Digital skills, hacking insights, secret websites, free tutorials, and more.</li>
+                </ul>
+
+                <h3>Connect With Me</h3>
+                <p>Stay updated and be part of the journey! Join my channels and follow my updates using the links below:</p>
+
+                <div class="links">
+                    <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" target="_blank">WhatsApp Channel</a>
+                    <a href="https://whatsapp.com/channel/0029VayLHeB6RGJLBJFZXs1e" target="_blank">Backup Channel</a>
+                    <a href="https://www.youtube.com/@ekaggrafix" target="_blank">YouTube Channel</a>
+                    <a href="https://t.me/rg_digitals" target="_blank">Telegram Channel</a>
+                    <a href="https://t.me/eka_g_grafix" target="_blank">Telegram Group</a>
+                    <a href="https://wa.link/1kfvsa" target="_blank">Connect with Me</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
 </body>
-            </html>
+                </html>
