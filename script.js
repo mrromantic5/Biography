@@ -1,11 +1,11 @@
 function checkPassword() {
-    const password = document.getElementById("password").value;
-    const correctPassword = "romantic"; // Change this to your preferred password
+    let password = document.getElementById("password").value;
+    let errorMessage = document.getElementById("error-message");
 
-    if (password === correctPassword) {
-        document.getElementById("password-container").style.display = "none";
-        document.getElementById("main-content").classList.remove("hidden");
+    if (password === "Romanticlove") {
+        document.getElementById("password-section").style.display = "none";  // Hide password section
+        document.getElementById("main-content").style.display = "flex";  // Show main content
     } else {
-        document.getElementById("error-message").innerText = "Incorrect password. Try again.";
+        errorMessage.textContent = "Incorrect password! Try again.";  // Show error message
     }
-            }
+    }
