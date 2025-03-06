@@ -3,41 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Romantic - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="icon" href="logo.png" type="image/png">
+    <title>Protected Biography</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to CSS -->
 </head>
 <body>
-    <div id="password-container">
-        <h2>Enter Password</h2>
-        <input type="password" id="password" placeholder="Enter password">
-        <button onclick="checkPassword()">Submit</button>
+
+    <!-- Video Background for Password Section -->
+    <div id="password-section">
+        <video autoplay muted loop id="password-video">
+            <source src="password-bg.mp4" type="video/mp4">  <!-- Upload this video -->
+            Your browser does not support the video tag.
+        </video>
+
+        <div id="password-container">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
     </div>
 
-    <div id="content" style="display: none;">
-        <header>
-            <h1>Welcome to Mr. Romantic's World</h1>
-            <p>Empowering digital minds with tech and creativity</p>
-        </header>
+    <!-- Main Content Section with a Different Background -->
+    <div id="main-content">
+        <video autoplay muted loop id="content-video">
+            <source src="content-bg.mp4" type="video/mp4">  <!-- Upload this video -->
+            Your browser does not support the video tag.
+        </video>
 
-        <section class="bio">
-            <img src="profile.jpg" alt="Profile Picture">
-            <h2>Emmanuel K. Gyasi Arthur</h2>
-            <p>Popularly known as Mr. Romantic, a passionate tech expert and digital content creator from Ghana.</p>
-        </section>
-
-        <section class="links">
-            <h2>Connect With Me</h2>
-            <a href="https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u" class="btn">WhatsApp Channel</a>
-            <a href="https://t.me/rg_digitals" class="btn">Telegram Channel</a>
-            <a href="https://www.youtube.com/@ekaggrafix" class="btn">YouTube Channel</a>
-            <a href="https://wa.link/1kfvsa" class="btn">DM Me</a>
-        </section>
-
-        <footer>
-            <p>© 2025 Mr. Romantic | All Rights Reserved</p>
-        </footer>
+        <div id="content">
+            <h1>Welcome to My Biography</h1>
+            <p>This is my personal website...</p>
+        </div>
     </div>
+
+    <script src="script.js"></script>  <!-- Link to JavaScript -->
 </body>
-</html>
+                </html>
