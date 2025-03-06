@@ -1,9 +1,9 @@
 function checkPassword() {
     let password = document.getElementById("password").value;
 
-    if (password === "Romanticlove") {
-        document.getElementById("password-container").style.display = "none";
-        document.getElementById("content").style.display = "block";
+    if (password === "Romanticlove") { 
+        document.getElementById("password-section").style.display = "none";  // Hide password section
+        document.getElementById("main-content").style.display = "block";  // Show main content
     } else {
         alert("Incorrect password! Try again.");
     }
